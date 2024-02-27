@@ -1,0 +1,70 @@
+.navbar {
+  position: fixed;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  padding: 0px 100px;
+  color: rgb(98, 144, 146);
+}
+
+.logo {
+  flex: 1;
+  color: rgb(67, 105, 106);
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 30px;
+
+  a {
+    border-bottom: 10px;
+    border-width: 20px;
+    border-color: black;
+  }
+
+  a:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 500ms;
+    border-bottom: 1px solid red;
+  }
+
+  .active {
+    border-bottom: 1px solid red;
+  }
+}
+
+.contact {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+
+  button {
+    font-weight: bolder;
+    font-size: large;
+    padding: 10px 30px;
+    background: transparent;
+    border-color: rgb(67, 105, 106);
+    cursor: pointer;
+  }
+
+  button:hover {
+    border-radius: 20px;
+    transition: ease-in-out 500ms, all 500ms;
+    background-color: rgb(67, 105, 106);
+    border-color: transparent;
+    color: aliceblue;
+  }
+}
+
+hr {
+  height: 3px;
+  border-top: solid 3px rgb(67, 105, 106);
+  margin-left: 100px;
+}
