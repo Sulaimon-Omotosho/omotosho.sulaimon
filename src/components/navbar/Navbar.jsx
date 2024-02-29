@@ -1,6 +1,7 @@
 import React from 'react'
 import './navbar.scss'
 import { useLocation } from 'react-router-dom'
+import Sidebar from '../sidebar/Sidebar'
 
 const items = [
   { title: 'Home', link: '/' },
@@ -17,6 +18,7 @@ const usePathname = () => {
 const Navbar = () => {
   return (
     <div className='navbar'>
+      <Sidebar />
       <div className='nav'>
         <div className='logo'>
           <h1>
@@ -38,7 +40,7 @@ const Navbar = () => {
           <button>Say Hi!</button>
         </div>
       </div>
-      <hr />
+      <hr className='line' />
     </div>
   )
 }

@@ -1,0 +1,69 @@
+@import '../../app.scss';
+
+.sidebar {
+  position: absolute;
+  transition: all 1000ms;
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include desktopXL {
+    display: none;
+  }
+
+  .bg {
+    left: 0;
+    height: 100vh;
+    background: rgba(124, 119, 119, 0.694);
+    backdrop-filter: blur(3px);
+  }
+
+  .bgn {
+    display: none;
+    left: -50vw;
+    top: -100vh;
+    height: 100vh;
+    width: 50vw;
+  }
+  .link {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  a {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  a:hover {
+    transform: scale(1.5);
+    transition: all 500ms;
+    border-bottom: 1px solid red;
+  }
+
+  .active {
+    border-bottom: 1px solid red;
+  }
+}
+
+.toggleButton {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
