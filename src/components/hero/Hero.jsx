@@ -3,8 +3,8 @@ import './hero.scss'
 
 const Hero = () => {
   return (
-    <>
-      <div className='wrapper'>
+    <div className='wrapper'>
+      <div className='hero'>
         <div className='text'>
           <h1>
             A Frontend Web <br /> Developer
@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

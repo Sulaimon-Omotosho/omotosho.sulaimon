@@ -55,7 +55,7 @@
 
   a:hover {
     transform: scale(1.5);
-    transition: ease-in-out 500ms;
+    transition: 500ms ease;
     border-bottom: 1px solid red;
   }
 
@@ -90,7 +90,7 @@
 
   button:hover {
     border-radius: 20px;
-    transition: ease-in-out 500ms, all 500ms;
+    transition: 500ms ease;
     background-color: rgb(67, 105, 106);
     border-color: transparent;
     color: aliceblue;
