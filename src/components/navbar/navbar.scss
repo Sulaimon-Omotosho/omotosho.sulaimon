@@ -2,15 +2,8 @@
 
 .navbar {
   position: fixed;
+  backdrop-filter: blur(3px);
   // display: flex;
-
-  @include tablet {
-    position: relative;
-  }
-
-  @include mobile {
-    position: relative;
-  }
 }
 
 .nav {

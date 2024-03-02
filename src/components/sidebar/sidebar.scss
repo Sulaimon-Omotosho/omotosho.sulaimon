@@ -1,7 +1,7 @@
 @import '../../app.scss';
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   transition: all 1000ms;
   @include mobile {
     width: 100%;

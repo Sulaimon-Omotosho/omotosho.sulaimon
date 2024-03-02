@@ -18,7 +18,7 @@ const usePathname = () => {
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className='nav'>
         <div className='logo'>
           <h1>

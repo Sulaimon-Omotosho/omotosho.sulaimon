@@ -3,9 +3,25 @@ import './hero.scss'
 
 const Hero = () => {
   return (
-    <div className='hero'>
-      <h1>This Is A New Portfolio</h1>
-    </div>
+    <>
+      <div className='wrapper'>
+        <div className='text'>
+          <h1>
+            A Frontend Web <br /> Developer
+          </h1>
+          <p>
+            Frontend Developer with a unique design perspective, <br /> crafting
+            exceptional user interfaces that set new standards
+          </p>
+          <button>View About</button>
+        </div>
+        <div className='aboutImage'>
+          <div className='imageWrapper'>
+            <img src='portfolio image.jpg' alt='about image' />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
