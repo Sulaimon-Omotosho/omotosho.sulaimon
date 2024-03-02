@@ -7,10 +7,22 @@
 
     .logo {
       flex: 1;
+      font-size: larger;
+      font-weight: bolder;
     }
 
     .menu {
       flex: 3;
+      display: flex;
+      text-transform: capitalize;
+      justify-content: center;
+      gap: 30px;
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
   }
 
