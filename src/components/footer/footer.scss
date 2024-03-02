@@ -1,0 +1,31 @@
+.footer {
+  background: rgb(230, 241, 244);
+  padding: 20px 50px;
+
+  .main {
+    display: flex;
+
+    .logo {
+      flex: 1;
+    }
+
+    .menu {
+      flex: 3;
+    }
+  }
+
+  .foot {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-weight: bold;
+    }
+    img {
+      width: 20px;
+      border-radius: 50%;
+    }
+  }
+}
