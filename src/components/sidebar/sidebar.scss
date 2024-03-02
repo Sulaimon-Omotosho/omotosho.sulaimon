@@ -22,16 +22,26 @@
   .bg {
     left: 0;
     height: 100vh;
+    width: 75vw;
     background: rgba(124, 119, 119, 0.694);
     backdrop-filter: blur(3px);
+    transition: 500ms ease;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.493);
   }
 
   .bgn {
-    display: none;
-    left: -50vw;
-    top: -100vh;
+    display: absolute;
+    // left: -50vw;
+    // top: -100vh;
     height: 100vh;
-    width: 50vw;
+    width: 0vw;
+    transition: 500ms ease;
+
+    .link {
+      display: none;
+      // height: 100%;
+      // width: -100px;
+    }
   }
   .link {
     position: absolute;
