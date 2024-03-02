@@ -4,6 +4,7 @@
   position: fixed;
   backdrop-filter: blur(3px);
   // display: flex;
+  z-index: 2;
 }
 
 .nav {

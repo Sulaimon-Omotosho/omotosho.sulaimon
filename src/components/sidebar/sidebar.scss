@@ -3,6 +3,7 @@
 .sidebar {
   position: fixed;
   transition: 500ms ease;
+  z-index: 3;
   @include mobile {
     width: 80%;
   }
