@@ -49,26 +49,103 @@
     }
 
     .pro {
+      position: relative;
       display: flex;
-      gap: 10px;
-      padding-left: 200px;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      // padding-left: 200px;
+      padding-bottom: 40px;
+
+      @include desktop {
+        gap: 3px;
+      }
+
+      @include tablet {
+      }
 
       @include mobile {
-        padding-left: 40px;
       }
 
       .imageWrapper {
         width: 250px;
         border-radius: 20px;
+        transition: ease 500ms;
+
+        @include desktop {
+          width: 200px;
+        }
+
+        @include tablet {
+          width: 300px;
+        }
 
         @include mobile {
-          width: 200px;
+          width: 300px;
         }
 
         img {
           width: inherit;
           border-radius: inherit;
         }
+      }
+
+      .slide-hidden {
+        transform: scale(0.9);
+        filter: blur(1px);
+        transition: ease 500ms;
+
+        @include tablet {
+          display: none;
+        }
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        color: rgba(0, 0, 0, 0.468);
+        bottom: 2px;
+        filter: drop-shadow(3px 3px 10px black);
+        cursor: pointer;
+      }
+
+      .arrow-left {
+        left: 80px;
+      }
+
+      .arrow-right {
+        right: 30px;
+      }
+
+      .indicators {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 2px;
+        left: 50%;
+        gap: 4px;
+      }
+
+      .indicator {
+        background: white;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        border: none;
+        box-shadow: 2px 2px 5px grey;
+        cursor: pointer;
+        transition: ease 500ms;
+      }
+
+      .indicator-inactive {
+        background: gray;
+        transition: ease 500ms;
       }
     }
   }
