@@ -1,0 +1,75 @@
+@import '../../app.scss';
+
+.projects {
+  background: #f1f1db;
+  padding: 30px;
+  overflow-x: hidden;
+
+  .wrapper {
+    .proDesc {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 40px;
+
+      @include mobile {
+        text-align: center;
+      }
+
+      h3 {
+        text-transform: capitalize;
+        font-size: 50px;
+        font-weight: 900;
+      }
+
+      p {
+        font-weight: lighter;
+      }
+
+      button {
+        font-weight: bolder;
+        font-size: large;
+        padding: 10px 30px;
+        background-color: rgb(67, 105, 106);
+        color: aliceblue;
+        cursor: pointer;
+        transition: 500ms ease;
+        border: none;
+      }
+
+      button:hover {
+        border-radius: 20px;
+        transition: 500ms ease;
+        background: transparent;
+        border: solid 1px rgb(67, 105, 106);
+        color: inherit;
+      }
+    }
+
+    .pro {
+      display: flex;
+      gap: 10px;
+      padding-left: 200px;
+
+      @include mobile {
+        padding-left: 40px;
+      }
+
+      .imageWrapper {
+        width: 250px;
+        border-radius: 20px;
+
+        @include mobile {
+          width: 200px;
+        }
+
+        img {
+          width: inherit;
+          border-radius: inherit;
+        }
+      }
+    }
+  }
+}
