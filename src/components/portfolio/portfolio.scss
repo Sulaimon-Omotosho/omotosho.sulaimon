@@ -6,30 +6,111 @@
   .wrapper {
     .pContents {
       display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 70px;
+      padding: 30px;
+
+      @include tablet {
+        flex-direction: column;
+        padding-top: 100px;
+      }
+
+      @include mobile {
+        flex-direction: column;
+        padding-top: 100px;
+      }
 
       .dream {
         flex: 1;
+
+        @include tablet {
+          text-align: center;
+        }
+
+        @include mobile {
+          text-align: center;
+        }
+        h3 {
+          text-transform: capitalize;
+          font-size: 50px;
+          font-weight: 900;
+        }
+
+        p {
+          padding-top: 20px;
+          font-weight: lighter;
+          padding-bottom: 50px;
+        }
+
+        button {
+          font-weight: bolder;
+          font-size: large;
+          padding: 10px 30px;
+          background-color: rgb(67, 105, 106);
+          color: aliceblue;
+          cursor: pointer;
+          transition: 500ms ease;
+          border: none;
+        }
+
+        button:hover {
+          border-radius: 20px;
+          transition: 500ms ease;
+          background: transparent;
+          border: solid 1px rgb(67, 105, 106);
+          color: inherit;
+        }
       }
 
       .portraits {
         position: relative;
         flex: 1;
-        .line1 {
+        padding-top: 120px;
+        resize: both;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .box1 {
+          width: 80px;
+          height: 80px;
+          border: solid 3px rgb(67, 105, 106);
+          background: rgb(93, 166, 169);
+          transform: rotate(-45deg);
           position: absolute;
-          // right: 100px;
-          height: 3px;
-          border-top: solid 3px rgb(67, 105, 106);
-          transform: rotate(90deg);
+          right: 30%;
+          top: 5%;
+        }
+
+        .box2 {
+          width: 80px;
+          height: 80px;
+          border: solid 3px rgb(67, 105, 106);
+          background: rgb(115, 169, 231);
+          transform: rotate(-45deg);
+          position: absolute;
+          left: 26%;
+          bottom: 22%;
         }
 
         .portfolioImg1 {
-          width: 140px;
-          position: absolute;
+          width: 200px;
+          border: solid 3px rgb(67, 105, 106);
         }
 
-        .line2 {
-          height: 3px;
-          border-top: solid 3px rgb(67, 105, 106);
+        .portfolioImg2 {
+          width: 200px;
+          border: solid 3px rgb(67, 105, 106);
+          border-right: 0px;
+          margin-bottom: 150px;
+        }
+
+        .portfolioImg3 {
+          width: 200px;
+          border: solid 3px rgb(67, 105, 106);
+          border-left: 0px;
+          margin-bottom: 235px;
         }
       }
     }

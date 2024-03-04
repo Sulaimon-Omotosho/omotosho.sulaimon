@@ -52,12 +52,14 @@
     border-bottom: 10px;
     border-width: 20px;
     border-color: black;
+    transition: 500ms ease;
   }
 
   a:hover {
     transform: scale(1.5);
     transition: 500ms ease;
     border-bottom: 1px solid red;
+    transition: 500ms ease;
   }
 
   .active {
@@ -87,6 +89,7 @@
     background: transparent;
     border-color: rgb(67, 105, 106);
     cursor: pointer;
+    transition: 500ms ease;
   }
 
   button:hover {

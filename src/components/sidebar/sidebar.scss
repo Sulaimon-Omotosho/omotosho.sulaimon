@@ -42,6 +42,7 @@
       flex-direction: column;
       height: 100%;
       width: 100%;
+      transition: 500ms ease;
     }
   }
 
@@ -61,12 +62,14 @@
   a {
     font-size: 30px;
     font-weight: 500;
+    transition: 500ms ease;
   }
 
   a:hover {
     transform: scale(1.5);
     transition: all 500ms;
     border-bottom: 1px solid red;
+    transition: 500ms ease;
   }
 
   .active {
