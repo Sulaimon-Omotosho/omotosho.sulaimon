@@ -176,6 +176,7 @@
         bottom: 2px;
         filter: drop-shadow(3px 3px 10px black);
         cursor: pointer;
+        z-index: 5;
       }
 
       .arrow-left {
@@ -194,6 +195,8 @@
         bottom: 2px;
         left: 45%;
         gap: 4px;
+
+        z-index: 5;
       }
 
       .indicator {
