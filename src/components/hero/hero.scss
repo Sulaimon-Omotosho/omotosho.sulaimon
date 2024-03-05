@@ -52,6 +52,7 @@
       h1 {
         font-size: 90px;
         text-transform: capitalize;
+        color: rgb(52, 81, 82);
 
         @include desktop {
           font-size: 60px;
@@ -64,6 +65,7 @@
 
       p {
         font-size: 22px;
+        color: rgb(67, 105, 106);
 
         @include mobile {
           font-size: 15px;
@@ -78,13 +80,14 @@
         border: none;
         cursor: pointer;
         font-size: 20px;
+        transition: ease 500ms;
       }
 
       button:hover {
         border-radius: 20px;
         background: white;
         border: solid 2px rgb(67, 105, 106);
-        transition: ease-in-out 500ms, all 500ms;
+        transition: ease 500ms;
         color: rgb(67, 105, 106);
       }
     }

@@ -54,10 +54,12 @@
         h3 {
           font-weight: bold;
           font-size: medium;
+          color: rgb(52, 81, 82);
         }
 
         p {
           font-size: small;
+          color: rgb(67, 105, 106);
         }
       }
     }
@@ -77,6 +79,11 @@
     h1 {
       font-size: 70px;
       text-transform: capitalize;
+      color: rgb(52, 81, 82);
+    }
+
+    p {
+      color: rgb(67, 105, 106);
     }
   }
 }

@@ -22,10 +22,12 @@
         text-transform: capitalize;
         font-size: 50px;
         font-weight: 900;
+        color: rgb(52, 81, 82);
       }
 
       p {
         font-weight: lighter;
+        color: rgb(67, 105, 106);
       }
 
       button {
@@ -44,7 +46,7 @@
         transition: 500ms ease;
         background: transparent;
         border: solid 1px rgb(67, 105, 106);
-        color: inherit;
+        color: rgb(52, 81, 82);
       }
     }
 
@@ -71,6 +73,8 @@
         width: 250px;
         border-radius: 20px;
         transition: ease 500ms;
+        position: relative;
+        overflow: hidden;
 
         @include desktop {
           width: 200px;
@@ -88,6 +92,59 @@
           width: inherit;
           border-radius: inherit;
         }
+
+        .imgDesc {
+          position: absolute;
+          background: rgba(255, 255, 255, 0.845);
+          // filter: blur(2px);
+          width: inherit;
+          height: 35%;
+          padding: 10px;
+          text-align: center;
+          backdrop-filter: blur(1px);
+          bottom: 0%;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          color: rgb(52, 81, 82);
+          transition: ease 500ms;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          @include desktop {
+            height: 45%;
+          }
+
+          @include tablet {
+            height: 28%;
+          }
+
+          @include mobile {
+            height: 28%;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+
+          button {
+            padding: 3px 15px;
+            cursor: pointer;
+            transition: ease 500ms;
+          }
+
+          button:hover {
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background: rgb(52, 81, 82);
+            transition: ease 500ms;
+          }
+        }
       }
 
       .slide-hidden {
@@ -102,13 +159,20 @@
         @include mobile {
           display: none;
         }
+
+        .imgDesc {
+          // display: none;
+          height: 0%;
+          transition: ease 500ms;
+          filter: blur(5px);
+        }
       }
 
       .arrow {
         position: absolute;
         width: 40px;
         height: 40px;
-        color: rgba(0, 0, 0, 0.468);
+        color: rgba(52, 81, 82, 0.581);
         bottom: 2px;
         filter: drop-shadow(3px 3px 10px black);
         cursor: pointer;
@@ -128,7 +192,7 @@
         justify-content: center;
         position: absolute;
         bottom: 2px;
-        left: 50%;
+        left: 45%;
         gap: 4px;
       }
 
@@ -144,7 +208,7 @@
       }
 
       .indicator-inactive {
-        background: gray;
+        background: rgba(52, 81, 82, 0.581);
         transition: ease 500ms;
       }
     }
