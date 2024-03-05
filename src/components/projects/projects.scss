@@ -180,11 +180,27 @@
       }
 
       .arrow-left {
-        left: 80px;
+        left: 30%;
+
+        @include tablet {
+          left: 20%;
+        }
+
+        @include mobile {
+          left: 15%;
+        }
       }
 
       .arrow-right {
-        right: 30px;
+        right: 30%;
+
+        @include tablet {
+          right: 20%;
+        }
+
+        @include mobile {
+          right: 15%;
+        }
       }
 
       .indicators {
@@ -193,9 +209,9 @@
         justify-content: center;
         position: absolute;
         bottom: 2px;
-        left: 45%;
+        // left: 45%;
         gap: 4px;
-
+        text-align: center;
         z-index: 5;
       }
 
