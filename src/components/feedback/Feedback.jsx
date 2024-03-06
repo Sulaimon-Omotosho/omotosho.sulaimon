@@ -1,7 +1,7 @@
 import React from 'react'
 import './feedback.scss'
-import { FaRegCommentAlt } from 'react-icons/fa'
-import { CiStar } from 'React-icons/ci'
+import { FaRegCommentAlt, FaRegStar } from 'react-icons/fa'
+// import { CiStar } from 'React-icons/ci'
 import { GrLinkNext, GrLinkPrevious } from 'React-icons/gr'
 
 const Feedback = () => {
@@ -29,11 +29,11 @@ const Feedback = () => {
             </div>
             <div className='commenter'>
               <div className='rating'>
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
-                <CiStar className='star' />
+                <FaRegStar className='star' />
+                <FaRegStar className='star' />
+                <FaRegStar className='star' />
+                <FaRegStar className='star' />
+                <FaRegStar className='star' />
               </div>
               <p className='name'>Idowu Obawolu</p>
               <p>C.E.O, Obawolu Careers Hub</p>
