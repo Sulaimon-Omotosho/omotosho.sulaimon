@@ -110,6 +110,7 @@
           display: flex;
           flex-direction: column;
           gap: 5px;
+          pointer-events: none;
 
           @include desktop {
             height: 45%;
@@ -135,6 +136,10 @@
             padding: 3px 15px;
             cursor: pointer;
             transition: ease 500ms;
+
+            @include mobile {
+              width: 80%;
+            }
           }
 
           button:hover {
@@ -229,6 +234,7 @@
       .indicator-inactive {
         background: rgba(52, 81, 82, 0.581);
         transition: ease 500ms;
+        transform: scale(0.8);
       }
     }
   }

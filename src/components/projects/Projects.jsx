@@ -8,7 +8,7 @@ const images = [
     img: 'pro 1.jpg',
     title: 'Peppertea',
     desc: "Dive into PepperTea's hair artistry showcased in a sleek portfolio site by me. Experience creativity and precision, reflecting the essence of PepperTea's unique expertise",
-    link: 'peppertea-portfolio.vercel.app',
+    link: 'https://peppertea-portfolio.vercel.app',
   },
   // { id: '2', img: 'pro 2.jpg' },
   {
@@ -16,14 +16,14 @@ const images = [
     img: 'pro 3.jpg',
     title: 'Layo Oguntimehin',
     desc: "Explore Layo Oguntimehin's digital marketing prowess in a portfolio site crafted by me. Experience the essence of her dynamic strategies and expertise.",
-    link: 'layo.vercel.app',
+    link: 'https://layo.vercel.app',
   },
   {
     id: '4',
     img: 'pro 4.jpg',
     title: 'BuyFood.ng',
     desc: 'Indulge your culinary desires with BuyFood.ng, a web app artfully designed by me. Explore a seamless culinary journey as you navigate through the flavors and choices available at your fingertips.',
-    link: 'buy-food-ng.vercel.app',
+    link: 'https://buy-food-ng.vercel.app',
   },
   {
     id: '5',
@@ -31,14 +31,14 @@ const images = [
     title: 'Brich Africana',
     desc: 'Discover career empowerment with Brich Africana. Navigate through their services on a website crafted by me, designed to elevate your professional journey.',
 
-    link: 'brich-africana.vercel.app',
+    link: 'https://brich-africana.vercel.app',
   },
   {
     id: '6',
     img: 'pro 6.jpg',
     title: 'Realtor.com',
     desc: 'Explore the real estate landscape seamlessly with Realtor.com, a web app designed by me. Discover listings and navigate the property market effortlessly, all at your fingertips.',
-    link: 'realtor-site-v2.vercel.app',
+    link: 'https://realtor-site-v2.vercel.app',
   },
 ]
 
@@ -56,7 +56,7 @@ const Projects = () => {
     <div className='projects'>
       <div className='wrapper'>
         <div className='proDesc'>
-          <h3>Projects casestudy</h3>
+          <h3>Projects case study</h3>
           <p>
             Discover the success story behind my transformative digital project.
             <br />A brief, impactful case study of turning visions into reality.
@@ -75,11 +75,11 @@ const Projects = () => {
               }
               key={image.id}
             >
-              <img src={image.img} alt='' />
+              <img src={image.img} alt={image.title} />
               <div className='imgDesc'>
                 <h3>{image.title}</h3>
                 <p>{image.desc}</p>
-                <a href={image.link}>
+                <a href={image.link} target='_blank' rel='noopener noreferrer'>
                   <button>Visit Site</button>
                 </a>
               </div>
