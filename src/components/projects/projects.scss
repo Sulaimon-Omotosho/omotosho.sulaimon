@@ -110,7 +110,6 @@
           display: flex;
           flex-direction: column;
           gap: 5px;
-          pointer-events: none;
 
           @include desktop {
             height: 45%;

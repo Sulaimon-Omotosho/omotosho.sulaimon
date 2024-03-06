@@ -1,4 +1,5 @@
 import './app.scss'
+import Feedback from './components/feedback/Feedback'
 import Footer from './components/footer/Footer'
 import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Portfolio />
       <Projects />
+      <Feedback />
       <Footer />
     </>
   )
