@@ -2,7 +2,7 @@ import React from 'react'
 import './feedback.scss'
 import { FaRegCommentAlt, FaRegStar } from 'react-icons/fa'
 // import { CiStar } from 'React-icons/ci'
-import { GrLinkNext, GrLinkPrevious } from 'React-icons/gr'
+import { MdNavigateNext } from 'React-icons/md'
 
 const Feedback = () => {
   return (
@@ -39,8 +39,8 @@ const Feedback = () => {
               <p>C.E.O, Obawolu Careers Hub</p>
             </div>
             <div className='buttons'>
-              <GrLinkPrevious size={30} className='button' />
-              <GrLinkNext size={30} className='button' />
+              <MdNavigateNext size={30} className='button' />
+              <MdNavigateNext size={30} className='button' />
             </div>
           </div>
         </div>
